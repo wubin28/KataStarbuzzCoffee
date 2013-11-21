@@ -11,9 +11,9 @@ namespace KataStarbuzzCoffee
             // Given
             StarbuzzCoffeeFacade starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
             // When
-            StarbuzzCoffeeFacade.OrderOneCoffee();
+            starbuzzCoffeeFacade.OrderOneCoffee();
             // Then
-            Assert.AreEqual("Coffee (22.00) | Total=22.00", starbuzzCoffeeFacade.printBill(), "Failure - the bill should be printed as 'Coffee (22.00) | Total=22.00'.");
+            Assert.AreEqual("Coffee (22.00) | Total=22.00", starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22.00) | Total=22.00'.");
         }
     }
 }
