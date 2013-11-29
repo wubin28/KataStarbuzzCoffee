@@ -27,8 +27,8 @@ namespace KataStarbuzzCoffee
         {
             order = "OneCoffeeWithAHoneyAndAMilk";
             beverage = new Coffee();
-            beverage = new Honey(beverage);
-            beverage = new Milk(beverage);
+            beverage = new Honey(beverage, 4);
+            beverage = new Milk(beverage, 3);
         }
 
         internal string PrintBill()
