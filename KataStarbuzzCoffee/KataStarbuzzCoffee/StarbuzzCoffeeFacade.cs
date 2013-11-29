@@ -17,6 +17,16 @@ namespace KataStarbuzzCoffee
             beverage = new Coffee();
         }
 
+        internal void OrderOneCoffeeWithAMilk()
+        {
+            order = "OneCoffeeWithAMilk";
+        }
+
+        internal void OrderOneCoffeeWithAHoneyAndAMilk()
+        {
+            order = "OneCoffeeWithAHoneyAndAMilk";
+        }
+
         internal string PrintBill()
         {
 
@@ -36,14 +46,5 @@ namespace KataStarbuzzCoffee
             
         }
 
-        internal void OrderOneCoffeeWithAMilk()
-        {
-            order = "OneCoffeeWithAMilk";
-        }
-
-        internal void OrderOneCoffeeWithAHoneyAndAMilk()
-        {
-            order = "OneCoffeeWithAHoneyAndAMilk";
-        }
     }
 }
