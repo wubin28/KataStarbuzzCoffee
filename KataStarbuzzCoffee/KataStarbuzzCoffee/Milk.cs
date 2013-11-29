@@ -6,9 +6,10 @@ namespace KataStarbuzzCoffee
     {
         private Beverage beverage;
 
-        public Milk(Beverage beverage)
+        public Milk(Beverage beverage, int price)
         {
             this.beverage = beverage;
+            Price = price;
         }
 
         public override string GetTotalDescription()
