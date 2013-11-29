@@ -11,12 +11,12 @@
 
         public override string GetTotalDescription()
         {
-            throw new System.NotImplementedException();
+            return this.beverage.GetTotalDescription() + " + Honey (4)";
         }
 
         public override int GetTotalPrice()
         {
-            throw new System.NotImplementedException();
+            return this.beverage.GetTotalPrice() + 4;
         }
     }
 }
