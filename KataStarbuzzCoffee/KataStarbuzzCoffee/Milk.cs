@@ -6,7 +6,7 @@ namespace KataStarbuzzCoffee
     {
         public Milk(Beverage beverage)
         {
-            throw new NotImplementedException();
+            this.beverage = beverage;
         }
 
         public override string GetTotalDescription()
