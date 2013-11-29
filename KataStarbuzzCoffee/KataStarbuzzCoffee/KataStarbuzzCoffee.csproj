@@ -50,6 +50,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Beverage.cs" />
     <Compile Include="KataStarbuzzCoffeeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StarbuzzCoffeeFacade.cs" />

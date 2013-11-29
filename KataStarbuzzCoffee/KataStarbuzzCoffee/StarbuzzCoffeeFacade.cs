@@ -48,8 +48,4 @@ namespace KataStarbuzzCoffee
             order = "OneCoffeeWithAHoneyAndAMilk";
         }
     }
-
-    internal class Beverage
-    {
-    }
 }
