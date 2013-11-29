@@ -2,14 +2,16 @@
 {
     internal class Coffee : Beverage
     {
+        private int price = 22;
+
         public override string GetTotalDescription()
         {
-            return "Coffee (22)";
+            return "Coffee (" + price + ")";
         }
 
         public override int GetTotalPrice()
         {
-            return 22;
+            return price;
         }
     }
 }
