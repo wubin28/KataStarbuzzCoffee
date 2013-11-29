@@ -13,12 +13,12 @@ namespace KataStarbuzzCoffee
 
         public override string GetTotalDescription()
         {
-            return beverage.GetTotalDescription() + " + Milk (3.50)";
+            return beverage.GetTotalDescription() + " + Milk (3)";
         }
 
         public override int GetTotalPrice()
         {
-            throw new NotImplementedException();
+            return this.beverage.GetTotalPrice() + 3;
         }
     }
 }

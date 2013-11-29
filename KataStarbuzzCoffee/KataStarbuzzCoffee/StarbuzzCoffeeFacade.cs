@@ -37,7 +37,7 @@ namespace KataStarbuzzCoffee
             }
             if (order == "OneCoffeeWithAMilk")
             {
-                return "Coffee (22) + Milk (3) | Total=25";
+                return beverage.GetTotalDescription() + " | Total=" + beverage.GetTotalPrice();
             }
             if (order == "OneCoffeeWithAHoneyAndAMilk")
             {
