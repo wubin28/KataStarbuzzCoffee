@@ -4,9 +4,10 @@
     {
         private Beverage beverage;
 
-        public Honey(Beverage beverage)
+        public Honey(Beverage beverage, int price)
         {
             this.beverage = beverage;
+            Price = price;
         }
 
         public override string GetTotalDescription()

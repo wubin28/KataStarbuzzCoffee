@@ -26,7 +26,7 @@ namespace KataStarbuzzCoffee
         internal void OrderOneCoffeeWithAHoneyAndAMilk()
         {
             order = "OneCoffeeWithAHoneyAndAMilk";
-            beverage = new Coffee();
+            beverage = new Coffee(22);
             beverage = new Honey(beverage, 4);
             beverage = new Milk(beverage, 3);
         }
