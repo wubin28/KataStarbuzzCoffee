@@ -4,6 +4,8 @@ namespace KataStarbuzzCoffee
 {
     internal class Milk : Beverage
     {
+        private Beverage beverage;
+
         public Milk(Beverage beverage)
         {
             this.beverage = beverage;
