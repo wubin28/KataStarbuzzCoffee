@@ -2,6 +2,8 @@
 {
     internal class Honey : Beverage
     {
+        private Beverage beverage;
+
         public Honey(Beverage beverage)
         {
             this.beverage = beverage;
