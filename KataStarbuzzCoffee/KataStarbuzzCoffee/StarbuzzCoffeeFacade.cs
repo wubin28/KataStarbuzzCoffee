@@ -33,15 +33,15 @@ namespace KataStarbuzzCoffee
 
             if (order == "OneCoffee")
             {
-                return beverage.GetTotalDescription() + " | " + beverage.GetTotalPrice();
+                return beverage.GetTotalDescription() + " | Total=" + beverage.GetTotalPrice();
             }
             if (order == "OneCoffeeWithAMilk")
             {
-                return "Coffee (22.00) + Milk (3.50) | Total=25.50";
+                return "Coffee (22) + Milk (3) | Total=25";
             }
             if (order == "OneCoffeeWithAHoneyAndAMilk")
             {
-                return "Coffee (22.00) + Honey (4.50) + Milk (3.50) | Total=30.00";
+                return "Coffee (22) + Honey (4) + Milk (3) | Total=29";
             }
             throw new InvalidDataException("the value of the variable order " + order + " is invalid.");
             

@@ -16,7 +16,7 @@ namespace KataStarbuzzCoffee
             return beverage.GetTotalDescription() + " + Milk (3.50)";
         }
 
-        public override string GetTotalPrice()
+        public override int GetTotalPrice()
         {
             throw new NotImplementedException();
         }

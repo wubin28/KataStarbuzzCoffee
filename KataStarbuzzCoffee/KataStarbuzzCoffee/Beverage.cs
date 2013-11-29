@@ -3,6 +3,6 @@
     abstract class Beverage
     {
         public abstract string GetTotalDescription();
-        public abstract string GetTotalPrice();
+        public abstract int GetTotalPrice();
     }
 }

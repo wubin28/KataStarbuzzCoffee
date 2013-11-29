@@ -4,12 +4,12 @@
     {
         public override string GetTotalDescription()
         {
-            return "Coffee (22.00)";
+            return "Coffee (22)";
         }
 
-        public override string GetTotalPrice()
+        public override int GetTotalPrice()
         {
-            return "Total=22.00";
+            return 22;
         }
     }
 }
