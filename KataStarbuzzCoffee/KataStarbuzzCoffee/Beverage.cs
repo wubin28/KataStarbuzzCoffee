@@ -2,5 +2,6 @@
 {
     abstract class Beverage
     {
+        public abstract string GetTotalDescription();
     }
 }
