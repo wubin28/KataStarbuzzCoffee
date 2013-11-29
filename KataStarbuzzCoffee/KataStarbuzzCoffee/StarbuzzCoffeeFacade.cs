@@ -9,14 +9,19 @@ namespace KataStarbuzzCoffee
     class StarbuzzCoffeeFacade
     {
         private string order = "";
+        private Beverage beverage = null;
 
         internal void OrderOneCoffee()
         {
             order = "OneCoffee";
+            beverage = new Coffee();
         }
 
         internal string PrintBill()
         {
+            beverage.GetTotalDescription();
+            beverage.GetTotalPrice();
+
             if (order == "OneCoffee")
             {
                 return "Coffee (22.00) | Total=22.00";
