@@ -3,7 +3,6 @@
     internal class Honey : Beverage
     {
         private Beverage beverage;
-        private int price = 4;
 
         public Honey(Beverage beverage)
         {
@@ -12,12 +11,12 @@
 
         public override string GetTotalDescription()
         {
-            return this.beverage.GetTotalDescription() + " + Honey (" + price + ")";
+            return this.beverage.GetTotalDescription() + " + Honey (" + Price + ")";
         }
 
         public override int GetTotalPrice()
         {
-            return this.beverage.GetTotalPrice() + price;
+            return this.beverage.GetTotalPrice() + Price;
         }
     }
 }
