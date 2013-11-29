@@ -44,7 +44,7 @@ namespace KataStarbuzzCoffee
             }
             if (order == "OneCoffeeWithAHoneyAndAMilk")
             {
-                return "Coffee (22) + Honey (4) + Milk (3) | Total=29";
+                return beverage.GetTotalDescription() + " | Total=" + beverage.GetTotalPrice();
             }
             throw new InvalidDataException("the value of the variable order " + order + " is invalid.");
             
