@@ -4,7 +4,7 @@
     {
         public Honey(Beverage beverage)
         {
-            throw new System.NotImplementedException();
+            this.beverage = beverage;
         }
 
         public override string GetTotalDescription()
