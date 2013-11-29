@@ -5,6 +5,8 @@ namespace KataStarbuzzCoffee
     [TestFixture]
     public class KataStarbuzzCoffeeTest
     {
+        private StarbuzzCoffeeFacade _starbuzzCoffeeFacade;
+
         [SetUp]
         protected void SetUp()
         {
@@ -15,11 +17,11 @@ namespace KataStarbuzzCoffee
         public void TestOneCoffee()
         {
             // Given
-            StarbuzzCoffeeFacade starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
+            _starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
             // When
-            starbuzzCoffeeFacade.OrderOneCoffee();
+            _starbuzzCoffeeFacade.OrderOneCoffee();
             // Then
-            Assert.AreEqual("Coffee (22) | Total=22", starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) | Total=22'.");
+            Assert.AreEqual("Coffee (22) | Total=22", _starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) | Total=22'.");
         }
 
         [Test]
