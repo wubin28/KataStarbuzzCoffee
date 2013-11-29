@@ -8,5 +8,15 @@ namespace KataStarbuzzCoffee
         {
             throw new NotImplementedException();
         }
+
+        public override string GetTotalDescription()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetTotalPrice()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
