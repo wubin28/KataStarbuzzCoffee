@@ -4,12 +4,12 @@
     {
         public override string GetTotalDescription()
         {
-            throw new System.NotImplementedException();
+            return "Coffee(22.00)";
         }
 
         public override string GetTotalPrice()
         {
-            throw new System.NotImplementedException();
+            return "Total=22.00";
         }
     }
 }
