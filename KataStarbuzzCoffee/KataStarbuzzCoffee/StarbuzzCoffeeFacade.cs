@@ -13,13 +13,13 @@ namespace KataStarbuzzCoffee
         internal void OrderOneCoffee()
         {
             order = "OneCoffee";
-            beverage = new Coffee();
+            beverage = new Coffee(22);
         }
 
         internal void OrderOneCoffeeWithAMilk()
         {
             order = "OneCoffeeWithAMilk";
-            beverage = new Coffee();
+            beverage = new Coffee(22);
             beverage = new Milk(beverage);
         }
 
