@@ -10,14 +10,13 @@ namespace KataStarbuzzCoffee
         [SetUp]
         protected void SetUp()
         {
-            
+            // Given
+            _starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
         }
 
         [Test]
         public void TestOneCoffee()
         {
-            // Given
-            _starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
             // When
             _starbuzzCoffeeFacade.OrderOneCoffee();
             // Then
@@ -27,23 +26,19 @@ namespace KataStarbuzzCoffee
         [Test]
         public void TestOneCoffeeWithAMilk()
         {
-            // Given
-            StarbuzzCoffeeFacade starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
             // When
-            starbuzzCoffeeFacade.OrderOneCoffeeWithAMilk();
+            _starbuzzCoffeeFacade.OrderOneCoffeeWithAMilk();
             // Then
-            Assert.AreEqual("Coffee (22) + Milk (3) | Total=25", starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) + Milk (3) | Total=25'.");
+            Assert.AreEqual("Coffee (22) + Milk (3) | Total=25", _starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) + Milk (3) | Total=25'.");
         }
 
         [Test]
         public void TestOneCoffeeWithAHoneyAndAMilk()
         {
-            // Given
-            StarbuzzCoffeeFacade starbuzzCoffeeFacade = new StarbuzzCoffeeFacade();
             // When
-            starbuzzCoffeeFacade.OrderOneCoffeeWithAHoneyAndAMilk();
+            _starbuzzCoffeeFacade.OrderOneCoffeeWithAHoneyAndAMilk();
             // Then
-            Assert.AreEqual("Coffee (22) + Honey (4) + Milk (3) | Total=29", starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) + Honey (4) + Milk (3) | Total=29'");
+            Assert.AreEqual("Coffee (22) + Honey (4) + Milk (3) | Total=29", _starbuzzCoffeeFacade.PrintBill(), "Failure - the bill should be printed as 'Coffee (22) + Honey (4) + Milk (3) | Total=29'");
         }
     }
 }
