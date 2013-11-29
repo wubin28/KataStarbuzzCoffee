@@ -5,6 +5,12 @@ namespace KataStarbuzzCoffee
     [TestFixture]
     public class KataStarbuzzCoffeeTest
     {
+        [SetUp]
+        protected void SetUp()
+        {
+            
+        }
+
         [Test]
         public void TestOneCoffee()
         {
