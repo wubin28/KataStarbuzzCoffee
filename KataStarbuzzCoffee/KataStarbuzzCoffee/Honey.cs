@@ -1,13 +1,9 @@
 ﻿namespace KataStarbuzzCoffee
 {
-    internal class Honey : Beverage
+    internal class Honey : Condiment
     {
-        private Beverage beverage;
-
-        public Honey(Beverage beverage, int price)
+        public Honey(Beverage beverage, int price) : base(beverage, price)
         {
-            this.beverage = beverage;
-            Price = price;
         }
 
         public override string GetTotalDescription()
