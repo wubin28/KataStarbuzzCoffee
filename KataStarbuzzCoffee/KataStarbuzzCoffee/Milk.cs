@@ -2,14 +2,10 @@
 
 namespace KataStarbuzzCoffee
 {
-    internal class Milk : Beverage
+    internal class Milk : Condiment
     {
-        private Beverage beverage;
-
-        public Milk(Beverage beverage, int price)
+        public Milk(Beverage beverage, int price) : base(beverage, price)
         {
-            this.beverage = beverage;
-            Price = price;
         }
 
         public override string GetTotalDescription()

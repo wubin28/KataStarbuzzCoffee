@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Beverage.cs" />
     <Compile Include="Coffee.cs" />
+    <Compile Include="Condiment.cs" />
     <Compile Include="Honey.cs" />
     <Compile Include="KataStarbuzzCoffeeTest.cs" />
     <Compile Include="Milk.cs" />
